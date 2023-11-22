@@ -6,7 +6,7 @@ The website can be found at https://task-manager-git-main-thushit-kumar-rs-proje
 
 ## BASIC STRUCTURE OF TASK MANAGER
 
-<img src='https://github.com/Senume/task-manager-/blob/main/DATA/HTMLStruture.png'/>
+<img src='DATA/HTMLStruture.png'/>
 
 From the above image, design of HTML file is modularied based on the function and looks. This makes the implementation simpler focusing on the each component individually.
 
