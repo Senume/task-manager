@@ -2,7 +2,7 @@
 
 Developed a React application enabling the users to add, remove, and update tasks with status toggling between done and undone. This document serves as a guide to elucidate the implementation and design process.
 
-The website can be found at https://task-manager-git-main-thushit-kumar-rs-projects.vercel.app/
+The website can be found at https://task-manager-nine-tan.vercel.app/
 
 ## BASIC STRUCTURE OF TASK MANAGER
 
