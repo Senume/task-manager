@@ -6,7 +6,7 @@ The website can be found at https://task-manager-git-main-thushit-kumar-rs-proje
 
 ## BASIC STRUCTURE OF TASK MANAGER
 
-![Alt text](<WhatsApp Image 2023-11-22 at 23.33.54_ad553a5e.jpg>)
+![Alt text]((https://github.com/Senume/task-manager-/blob/main/DATA/HTMLStruture.png)
 
 From the above image, design of HTML file is modularied based on the function and looks. This makes the implementation simpler focusing on the each component individually.
 
@@ -15,7 +15,7 @@ From the above image, design of HTML file is modularied based on the function an
 #### *AddaTask* COMPONENT
 This component allows users to add new tasks. It includes a form with an input field for entering task text and a button to submit the form. It uses react-redux to dispatch the addTask action.
 
-![Alt text](Data/AddaTask.png)
+![Alt text](https://github.com/Senume/task-manager-/blob/main/Data/AddaTask.png)
 
 #### *Reducers* COMPONENT
 This file defines a Redux slice named 'tasksSlice'. It uses the createSlice function from @reduxjs/toolkit to create the slice. The slice includes the initial state for the tasks array and reducers for actions like adding a task, deleting a task, toggling the done status, and reordering tasks.
@@ -23,12 +23,12 @@ This file defines a Redux slice named 'tasksSlice'. It uses the createSlice func
 #### *Item* COMPONENT
 It includes buttons for toggling the status and deleting a task. It provides the struture for representation of a task item.
 
-![Alt text](Data/Item.png)
+![Alt text](https://github.com/Senume/task-manager-/blob/main/Data/Item.png)
 
 #### *ViewListsDraggable* COMPONENTS
 It provides a structure to represent all the task list. It uses the 'store' to hold data and update it when the user interacts with the item. To enable data, it calls the slicer to provide it with the functionality and its data. It also use 'useDrag' hook to set up drag-and-drop functionality.
 
-![Alt text](Data/Lists.png)
+![Alt text](https://github.com/Senume/task-manager-/blob/main/Data/Lists.png)
 
 #### *TaskManager* COMPONENTS
 It merges the 'AddaLists' and 'ViewListsDraggable' components into single page.
