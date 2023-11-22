@@ -15,7 +15,7 @@ From the above image, design of HTML file is modularied based on the function an
 #### *AddaTask* COMPONENT
 This component allows users to add new tasks. It includes a form with an input field for entering task text and a button to submit the form. It uses react-redux to dispatch the addTask action.
 
-![Alt2](https://github.com/Senume/task-manager-/blob/main/Data/AddaTask.png)
+<img width=500 src="https://github.com/Senume/task-manager-/assets/101030274/bb9adf60-e831-4a9b-bc1d-f2f5ac715e8b"/>
 
 #### *Reducers* COMPONENT
 This file defines a Redux slice named 'tasksSlice'. It uses the createSlice function from @reduxjs/toolkit to create the slice. The slice includes the initial state for the tasks array and reducers for actions like adding a task, deleting a task, toggling the done status, and reordering tasks.
@@ -23,12 +23,12 @@ This file defines a Redux slice named 'tasksSlice'. It uses the createSlice func
 #### *Item* COMPONENT
 It includes buttons for toggling the status and deleting a task. It provides the struture for representation of a task item.
 
-![Alt3](https://github.com/Senume/task-manager-/blob/main/Data/Item.png)
+<img width=500 src="https://github.com/Senume/task-manager-/assets/101030274/917a84df-5574-4a2a-89ee-a68aec0f935a"/>
 
 #### *ViewListsDraggable* COMPONENTS
 It provides a structure to represent all the task list. It uses the 'store' to hold data and update it when the user interacts with the item. To enable data, it calls the slicer to provide it with the functionality and its data. It also use 'useDrag' hook to set up drag-and-drop functionality.
 
-![Alt4](https://github.com/Senume/task-manager-/blob/main/Data/Lists.png)
+<img width=500 src="https://github.com/Senume/task-manager-/assets/101030274/5accd0c4-9b03-4521-9baf-a04fe050b401"/>
 
 #### *TaskManager* COMPONENTS
 It merges the 'AddaLists' and 'ViewListsDraggable' components into single page.
@@ -50,4 +50,4 @@ A simple component displaying a personal resume or profile information. Note, th
 
 To implement drag-and-drop functionality for reordering tasks using only the useDrag hook, you can leverage the onMouseDown, onMouseUp, and onMouseMove events to manually handle the drag-and-drop process.
 
-![Alt5](https://github.com/Senume/task-manager-/blob/main/Data/DD.png)
+<img width=500 src="https://github.com/Senume/task-manager-/assets/101030274/20a97bb7-4ee1-482a-be59-ea953ca93b86"/>
