@@ -1,0 +1,42 @@
+.submitcontainer {
+    margin: 50px;
+}
+
+.textbox {
+    margin: 5px;
+
+    width: 60vw;
+    height: 25px;
+
+    border-radius: 10px;
+    border: none;
+}
+
+.textbox:hover {
+    box-shadow: 0 1px 5px 0.05px #36434a;
+    transition: box-shadow 100ms ease-out;
+
+}
+
+.input:focus {outline: 0}  
+
+.textbox:placeholder-shown {
+    padding-left: 10px;
+}
+
+
+
+.submitbutton {
+    border-radius: 10px;
+    border: none;
+
+    width: 100px;
+    height: 30px;
+
+    background-color: #A0E9FF;
+}
+
+
+.submitbutton:hover {
+    background-color: #a0e9ff94;
+}

@@ -1,0 +1,48 @@
+.container{
+    font-family: 'Archivo Narrow', sans-serif;
+    color: rgb(63, 60, 60);
+}
+
+.card, .container > h1 {
+    text-align: left;
+    text-decoration: dotted;
+}
+
+.container > h1 {
+    margin-left: 15px;;
+}
+
+.card {
+    margin: 5px;
+    padding: 10px;
+    
+    border: solid;
+    border-width: 0px;
+    border-radius: 5px;
+
+    background-color: #87c3ff62;
+
+    text-align: justify;
+}
+
+.card > p {
+    padding-right: 15px;
+}
+
+.logobox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+img {
+    background-color: transparent;
+    transition: transform 200ms ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+    transition: transform 200ms ease;
+}

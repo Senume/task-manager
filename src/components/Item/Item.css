@@ -1,0 +1,67 @@
+.Itemli {
+    margin: 5px;
+
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+
+    padding: 3px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: transform 0.3s ease;
+
+}
+
+.Itemli:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.TaskItem {
+    padding: 2px;
+}
+
+.ButtonHolderItem {
+    padding: 2px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.ButtonItem {
+    margin: 5px;
+
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+
+    padding-top: 3px;
+}
+
+.ButtonItem:hover{
+    background-color: #87c3ff3d;
+    transition: background-color 200ms ease-out;
+}
+
+.Link {
+    position: relative;
+    text-decoration: none;
+}
+
+.Link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px; /* Adjust the thickness of the underline as needed */
+    background-color: #DDF2FD; /* Adjust the color of the underline as needed */
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.Link:hover::before {
+    width: 100%;
+}

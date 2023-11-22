@@ -1,0 +1,16 @@
+
+
+.Manager h1 {
+
+    font-family: 'Archivo Narrow', sans-serif;
+    text-transform: uppercase;
+
+    color: rgb(104, 133, 168)
+}
+
+.Manager {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
