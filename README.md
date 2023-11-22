@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# TASK-MANAGER
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Developed a React application enabling the users to add, remove, and update tasks with status toggling between done and undone. This document serves as a guide to elucidate the implementation and design process.
 
-## Available Scripts
+The website can be found at https://task-manager-git-main-thushit-kumar-rs-projects.vercel.app/
 
-In the project directory, you can run:
+## BASIC STRUCTURE OF TASK MANAGER
 
-### `npm start`
+![Alt text](<WhatsApp Image 2023-11-22 at 23.33.54_ad553a5e.jpg>)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+From the above image, design of HTML file is modularied based on the function and looks. This makes the implementation simpler focusing on the each component individually.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### REACT COMPONENTS 
 
-### `npm test`
+#### *AddaTask* COMPONENT
+This component allows users to add new tasks. It includes a form with an input field for entering task text and a button to submit the form. It uses react-redux to dispatch the addTask action.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Alt text](Data/AddaTask.png)
 
-### `npm run build`
+#### *Reducers* COMPONENT
+This file defines a Redux slice named 'tasksSlice'. It uses the createSlice function from @reduxjs/toolkit to create the slice. The slice includes the initial state for the tasks array and reducers for actions like adding a task, deleting a task, toggling the done status, and reordering tasks.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### *Item* COMPONENT
+It includes buttons for toggling the status and deleting a task. It provides the struture for representation of a task item.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Alt text](Data/Item.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### *ViewListsDraggable* COMPONENTS
+It provides a structure to represent all the task list. It uses the 'store' to hold data and update it when the user interacts with the item. To enable data, it calls the slicer to provide it with the functionality and its data. It also use 'useDrag' hook to set up drag-and-drop functionality.
 
-### `npm run eject`
+![Alt text](Data/Lists.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### *TaskManager* COMPONENTS
+It merges the 'AddaLists' and 'ViewListsDraggable' components into single page.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### **ProfilePage** COMPONENTS
+A simple component displaying a personal resume or profile information. Note, the details shown are just implementation purposes. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## LIBRARIES USE
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**React and ReactDOM** - Core libraries for building React applications.
 
-## Learn More
+**React Router** - Library used to build multi-page website on React. It provides a interface to navigation between the React components. 'Task Manager page' and 'Profile page' are navigated via 'Router'
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Redux and React-Redux:** - Library for state management in React applications.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**@reduxjs/toolkit:** - A set of tools and abstractions for working with Redux, including the createSlice function.
 
-### Code Splitting
+## ADDITIONAL FUNCTIONALITIES
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To implement drag-and-drop functionality for reordering tasks using only the useDrag hook, you can leverage the onMouseDown, onMouseUp, and onMouseMove events to manually handle the drag-and-drop process.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Alt text](Data/DD.png)
