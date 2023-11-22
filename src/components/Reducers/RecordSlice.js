@@ -6,11 +6,11 @@ const tasksSlice = createSlice({
   name: 'tasks',
   initialState: {
     tasks: [
-      { id: 1, text: 'Task 1', done: false },
-      { id: 2, text: 'Task 2', done: false },
-      { id: 3, text: 'Task 3', done: false },
-      { id: 4, text: 'Task 4', done: false },
-      { id: 5, text: 'Task 5', done: true },
+      { id: 1, text: 'Design a logo for a fictional tech company specializing in renewable energy.', done: false },
+      { id: 2, text: 'Write a 500-word article on the impact of artificial intelligence on society.', done: false },
+      { id: 3, text: 'Buy Grocieries from the supermart', done: false },
+      { id: 4, text: 'Create a function in JavaScript that reverses a string.', done: false },
+      { id: 5, text: 'Declutter and organize a specific area of your home or workspace. ', done: true },
       // Add more tasks as needed
     ]
   },
